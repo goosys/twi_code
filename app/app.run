@@ -1,0 +1,7 @@
+#!/bin/sh
+
+CURDIR=`dirname $0`
+cd $CURDIR
+#/usr/local/bin/starman app.pl  --port=8088 --pid $CURDIR/pid 
+/usr/local/bin/starman app.pl -R ./ --port=8088 --pid $CURDIR/pid 
+
