@@ -20,6 +20,7 @@ __DATA__
 @@ main.html.ep
 % layout 'default';
 % title 'main page';
+<section id="sendform">
 <p>hello,hello</p>
 <form action="/" method="post">
   <label for="titleinput">title</label>
@@ -27,6 +28,7 @@ __DATA__
   <label for="textarea">memo code</label>
   <textarea name="code" placeholder="input your beautiful code" id="texarea"></textarea>
 </form>
+</section>
 
 @@ layouts/default.html.ep
 <!DOCTYPE html>
@@ -74,6 +76,9 @@ __DATA__
     
   }
   label { 
-    dispaly:none;
+    display:none;
+  }
+  textarea {
+    width:100%;
   }
   %= end
